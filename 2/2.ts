@@ -7,8 +7,7 @@ let sum = 0
 
 for (const line of data) {
     // First, split by ":" to find Game x and the rounds
-    const [name, results] = line.split(": ") as [string, string];
-    const gameNumber = parseInt(name.split(" ")[1]);
+    const [_, results] = line.split(": ") as [string, string];
     let [red, green, blue] = [0, 0, 0]
     for (const result of results.split("; ")) {
         for (const event of result.split(", ")) {
