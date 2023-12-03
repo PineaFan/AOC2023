@@ -1,6 +1,6 @@
 import { readFileSync } from "fs";
 
-const raw = readFileSync("3/data.txt", "utf-8")
+const raw = readFileSync("3/input.txt", "utf-8")
 const data = raw.split("\n").filter((l) => l.length)
 
 
@@ -79,7 +79,6 @@ for (const [y, x] of symbolCoordinates) {
 
 let sum = 0;
 for (const item of Array.from(numberCoordinates)) {
-    console.log(item.xStart, item.y, item.value)
     sum += parseInt(item.value)
 }
 
