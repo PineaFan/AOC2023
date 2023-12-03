@@ -1,6 +1,6 @@
 import { readFileSync } from "fs";
 
-const raw = readFileSync("3/input.txt", "utf-8")
+const raw = readFileSync("3/data.txt", "utf-8")
 const data = raw.split("\n").filter((l) => l.length)
 
 
